@@ -10,7 +10,7 @@ cd YakShop.API/
 dotnet run  # (or "dotnet watch run" to auto restart on save)
 ```
 
-## Run dotnet API.
+## Run client.
 ```
 # runs at localhost:3000
 cd yakshop-client/  
