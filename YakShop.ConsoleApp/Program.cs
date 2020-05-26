@@ -69,19 +69,29 @@ namespace YakShop.Console
             XmlDocument xDoc = new XmlDocument();
             // Load document using StringReader.
             xDoc.Load(new StringReader(xmlStr));
-            // Use tag provided by example
-            XmlNodeList ladyakNodes = xDoc.GetElementsByTagName("labyak");
-            // Generated id.
-            int id = 0;
-            // for each node of tags create and add a Yak
-            foreach (XmlNode node in ladyakNodes)
+            try
             {
-                yakHerd.Add(
-                    new Yak(id, node.Attributes.GetNamedItem("name").InnerText,
-                    Convert.ToDouble(node.Attributes.GetNamedItem("age").InnerText),
-                    node.Attributes.GetNamedItem("sex").InnerText.Equals("m") ? Sex.m : Sex.f)
-                );
-                id++;
+                // Use tag provided by example
+                XmlNodeList ladyakNodes = xDoc.GetElementsByTagName("labyak");
+                // Generated id.
+                int id = 0;
+                // for each node of tags create and add a Yak
+                foreach (XmlNode node in ladyakNodes)
+                {
+                    yakHerd.Add(
+                        new Yak(id, node.Attributes.GetNamedItem("name").InnerText,
+                        Convert.ToDouble(node.Attributes.GetNamedItem("age").InnerText),
+                        node.Attributes.GetNamedItem("sex").InnerText.Equals("m") ? Sex.m : Sex.f)
+                    );
+                    id++;
+                }
+
+            }
+            catch (Exception e)
+            {
+                System.Console.WriteLine("===== File not in proper format. ====");
+                System.Console.WriteLine(e.Message);
+
             }
             return yakHerd;
         }
