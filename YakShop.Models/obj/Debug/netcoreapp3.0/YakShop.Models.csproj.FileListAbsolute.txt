@@ -1,0 +1,8 @@
+/Users/StavrosDag/Desktop/YakShop/YakShop.Models/obj/Debug/netcoreapp3.0/YakShop.Models.csprojAssemblyReference.cache
+/Users/StavrosDag/Desktop/YakShop/YakShop.Models/obj/Debug/netcoreapp3.0/YakShop.Models.AssemblyInfoInputs.cache
+/Users/StavrosDag/Desktop/YakShop/YakShop.Models/obj/Debug/netcoreapp3.0/YakShop.Models.AssemblyInfo.cs
+/Users/StavrosDag/Desktop/YakShop/YakShop.Models/bin/Debug/netcoreapp3.0/YakShop.Models.deps.json
+/Users/StavrosDag/Desktop/YakShop/YakShop.Models/bin/Debug/netcoreapp3.0/YakShop.Models.dll
+/Users/StavrosDag/Desktop/YakShop/YakShop.Models/bin/Debug/netcoreapp3.0/YakShop.Models.pdb
+/Users/StavrosDag/Desktop/YakShop/YakShop.Models/obj/Debug/netcoreapp3.0/YakShop.Models.dll
+/Users/StavrosDag/Desktop/YakShop/YakShop.Models/obj/Debug/netcoreapp3.0/YakShop.Models.pdb
