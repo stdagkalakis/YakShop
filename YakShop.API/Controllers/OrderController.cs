@@ -39,11 +39,11 @@ namespace YakShop.API.Controllers
             // Skins or Milk == 0 means this part of the order couln't be fullfield
             if (checkedOrder.Order.Skins != requestSkins || checkedOrder.Order.Milk != requestMilk)
             {
-                return StatusCode(206, JsonConvert.SerializeObject(checkedOrder, Formatting.Indented));
+                return StatusCode(206, JsonConvert.SerializeObject(checkedOrder.Order, Formatting.Indented));
             }
 
             // Otherwise everything went well and we managed to add the order.
-            return StatusCode(201, JsonConvert.SerializeObject(checkedOrder, Formatting.Indented));
+            return StatusCode(201, JsonConvert.SerializeObject(checkedOrder.Order, Formatting.Indented));
 
         }
 

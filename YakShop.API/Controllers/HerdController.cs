@@ -65,7 +65,6 @@ namespace YakShop.API.Controllers
 
 
         // POST yak-shop/
-        // Add herd to db TODO. 
         [HttpPost]
         public async Task<IActionResult> AddYakToHerd(Yak yak)
         {

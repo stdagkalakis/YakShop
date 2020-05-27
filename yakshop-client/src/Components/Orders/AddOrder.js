@@ -49,8 +49,8 @@ const AddOrder = ({ notifyOrders }) => {
 
         await axios.post(`/yak-shop/order/${orderDetail.days}`, data, { headers: { "Content-Type": "application/json" } })
             .then(res => {
-                var skins = (res.data.order.skins) ? `${res.data.order.skins} skins` : '';
-                var milk = (res.data.order.milk) ? `${res.data.order.milk} liters of milk` : '';
+                var skins = (res.data.skins) ? `${res.data.skins} skins` : '';
+                var milk = (res.data.milk) ? `${res.data.milk} liters of milk` : '';
 
 
                 if (res.status === 206) {
